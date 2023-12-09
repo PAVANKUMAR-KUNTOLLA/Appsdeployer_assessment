@@ -6,4 +6,4 @@ https://github.com/PAVANKUMAR-KUNTOLLA/Appsdeployer_assessment/assets/109667063/
 
 Demo of the assessment...
 
-live on : https://appsdeployer-assessment-q0ca8c1qp-pavankumar-kuntolla.vercel.app/
+live on : https://appsdeployer-assessment.vercel.app/
