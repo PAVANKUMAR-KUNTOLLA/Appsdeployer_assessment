@@ -80,6 +80,10 @@ const StickyNote = ({ onClose, color }) => {
     }
   };
 
+  const handleOnClick = (e) => {
+    console.log("clikced");
+  };
+
   useEffect(() => {
     const updatedWidth = stickyNoteRef.current.scrollWidth + 2;
     const updatedHeight = stickyNoteRef.current.scrollHeight + 2;
@@ -112,7 +116,11 @@ const StickyNote = ({ onClose, color }) => {
       <Box sx={{ padding: "8px" }}>
         <Box sx={{ display: "flex", justifyContent: "space-between" }}>
           <Typography variant="h6">Sticker</Typography>
-          <CancelOutlinedIcon sx={{ marginTop: "4px" }} />
+          <CancelOutlinedIcon
+            sx={{ marginTop: "4px", cursor: "pointer" }}
+            onClick={onClose} // Call onClose when the close icon is clicked
+            onMouseDown={(e) => e.stopPropagation()} // Prevent propagation of the click event to onMouseDown
+          />
         </Box>
 
         <TextField
